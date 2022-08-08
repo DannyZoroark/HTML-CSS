@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fontes em CSS</title>
+	<link rel="stylesheet" href="#">
+	<style type="text/css">
+
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			/*
+				Medidas Absolutas
+					
+				cm, mm, in(polegada), px, pt, pc
+
+				Medidas Relativas
+					
+				em, ex, rem, vw, vh, %	
+
+			*/
+
+			/* Ao invés de fazer uma porrada de comando da pra usar
+				que chamam de ShortHand e colocar tudo numa linha só
+				
+				font-family: 'work Sans',sans-serif;
+				font-weight: bolder;
+				font-size: 2em;
+				font-style: italic;
+
+				seguindo o padrão: 
+				- font-style -> font-weight -> font-size -> font-family
+
+				font: italic, bolder, 2rem, 'work Sans', sans-serif;
+			*/
+			font-size: 20px;
+		}
+
+		.teste__{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			}
+
+		.teste__ span{
+			font-size: 16px;
+			color: blue;
+
+		}
+
+		#teste2__:hover{
+			font-size: 1.5em;
+			transition: 1s;
+		}	
+	</style>
+</head>
+<body>
+	<h1>Trabalhando com fontes</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<h2>Subtitulo do exercício </h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<h2>Passe o mouse por cima da palavra: </h2>
+	<div class="teste__">
+
+		<span id="teste2__"> StormFront </span>
+	</div>
+</body>
+</html>

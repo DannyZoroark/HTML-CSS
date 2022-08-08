@@ -1,0 +1,36 @@
+body{
+	background-color: #AADFBE;
+	font-family: Arial, helvetica, sans-serif;
+}
+
+h1{
+	color: #4D5C53;
+}
+
+h2{
+	color: #29593C;
+}
+
+p{
+
+}
+
+h1#titulo{
+	font: bold 30px Arial, Helvetica, sans-serif;
+	text-align: center;
+	background-color: #4D5C53;
+	color: #64D991;
+}
+
+.content_saiyan{
+	color: #394714;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: #B1C482;
+}
+
+.content_god{
+	color: #161747;
+	font-weight: bold;
+	background-color: #B1C482;
+}

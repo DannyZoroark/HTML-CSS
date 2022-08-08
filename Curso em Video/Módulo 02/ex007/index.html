@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grouping Tags</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			background-color: #EAC8AC;
+			margin: 0;
+		}
+
+		header{
+			padding: 10px;
+			background-color: #995C2B;
+			color: #EAC8AC;
+			text-align: center;
+		}
+
+		nav{
+			padding: 10px;
+			background-color: #4D3721;
+			border-radius: 20px;
+			box-shadow: 2px 2px 5px aliceblue;
+			/* horizontal | vertical | espalhamento | cor */
+		}
+
+		main{
+			background-color: #574C43;
+			color: white;
+			padding: 10px;
+			border-radius: 30px;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		footer{
+			background-color: #364B5D;
+			color: aliceblue;
+			text-align: center;
+			padding: 10px;
+		}
+
+		article{
+			background-color: #6B4A27;
+		}
+
+		article > aside{
+			background-color: #4D3721;
+		}
+
+		section > .assuntos__subtitulos{
+			color: lightcoral;
+		}
+
+		.assuntos__subtitulos{
+			text-align: center;
+		}
+
+		.nav__container__titulo{
+			display: inline-block;
+			text-decoration: none;
+			color: antiquewhite;
+		}
+
+		.nav__link{
+			text-decoration: none;
+			color: white;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.nav__container__titulo:hover{
+			color: darkblue;
+		}
+
+		nav > a:hover{
+			color: darkgray;
+			text-decoration: underline;
+			font-weight: bold;
+		}
+
+		#bola{
+			width: 200px;
+			height: 200px;
+			background-color: hotpink;
+			margin: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border-radius: 50%;
+			border: 2px solid blue;
+			box-shadow: 4px 4px 4px black;
+		}
+
+	</style>
+</head>
+<body>
+
+	<header class="nav__container">
+		<a href="index.html" class="nav__container__titulo"><h1>Site Legal</h1></a>
+		<nav class="nav__">
+			<a class="nav__link" href="#">Contato</a>
+			<a class="nav__link" href="#">Devs</a>
+			<a class="nav__link" href="#">Serviços</a>
+			<a class="nav__link" href="#">Investidores</a>
+			<a class="nav__link" href="#footer__">Rodapé</a>
+		</nav>
+	</header>
+
+	<main>
+
+		<section id="assuntos">
+			<h2 class="assuntos__subtitulos">Personagens de The Boys</h2>
+		</section>
+
+		<section id="noticias">
+
+			<article>
+				<h2>Tempesta</h2>
+				<p>Tempesta juntou-se aos Sete após a morte de Translucent se tornar pública e logo se tornou um breve rival de Homelander antes dos dois se tornarem amantes. Ela era adepta do uso das mídias sociais e tinha muitos seguidores online.</p>
+				<aside>
+					<p>Tempesta (anteriormente conhecido como Liberdade, nome real Klara Risinger) é um grande antagonista da série da Amazon The Boys, servindo como um dos dois principais antagonistas da 2ª temporada (junto com Homelander).</p>
+				</aside>
+			</article>
+
+		</section>
+		
+	</main>
+
+	<h2 class="assuntos__subtitulos">Aqui abaixo vemos uma Bola</h1>
+	<div id="bola">
+		
+	</div>
+
+	<footer id="footer__">
+		<p>Desenvolvido por DanielZornek</p>
+	</footer>
+
+</body>
+</html>
