@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tabelas</title>
+	<style type="text/css">
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		table{
+			width: 400px;
+			border-collapse: collapse;
+			box-shadow: 6px 6px 20px gray;
+		}
+
+		.table1{
+			height: 400px;
+		}
+
+		td{
+			border: 1px solid black;
+			padding: 8px;
+			font-size: 18px;
+			text-align: center;
+			vertical-align: top;
+		}
+
+		.container_form{
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.valor{
+			margin: 8px;
+			width: 15vw;
+			height: 4vh;
+			font-size: 20px;
+			padding: 6px;
+		}
+
+		.table_form{
+			margin: auto;
+		}
+
+		#option_class{
+			margin: 16px;
+			padding: 8px;
+			width: 15vw;
+			height: 6vh;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		#botao{
+			margin: 10px;
+			width: 10vw;
+			height: 4vh;
+		}
+
+		#subtitulo{
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Minha primeira Tabela</h1>
+	<!-- Tabela -->
+	<table class="table1">
+		<tr><!-- Linha 1 -->
+			<td>A1</td>
+			<td>B1</td>
+			<td>C1</td>
+		</tr><!-- Linha 1 -->
+
+		<tr><!-- Linha 2 -->
+			<td>A2</td>
+			<td>B2</td>
+			<td>C2</td>
+		</tr><!-- Linha 2 -->
+
+		<tr><!-- Linha 3 -->
+			<td>A3</td>
+			<td>B3</td>
+			<td>C3</td>
+		</tr><!-- Linha 3 -->
+
+		<tr><!-- Linha 4 -->
+			<td>A4</td>
+			<td>B4</td>
+			<td>C4</td>
+		</tr><!-- Linha 4 -->
+	</table>
+	<!-- Tabela -->
+	<br>
+	<hr>
+	<br>
+	<!-- Entrada de dados do usuário -->
+	<h2 id="subtitulo">Teste Com JavaScript</h2>
+		<div class="container_form">
+			<label for="nome">Digite seu nome aqui</label>
+			<input class="valor" type="text" id="nome">
+
+			<label for="age">Digite sua idade aqui</label>
+			<input class="valor" type="number" id="age">
+
+			<select id="option_class">
+				<option>Herói</option>
+				<option>Vilão</option>
+			</select>
+
+			<button id="botao" onclick="cadPessoa()"> Cadastrar na Tabela </button>
+		</div>
+	<!-- Entrada de dados do usuário -->
+
+	<table class="table_form">
+		<tr>
+			<td>Nome</td>
+			<td>Idade</td>
+			<td>Classe</td>
+		</tr>
+
+		<tr>
+			<td id="nome_"></td>
+			<td id="age_"></td>
+			<td id="class_"></td>
+		</tr>
+
+	</table>
+
+	<script type="text/javascript">
+
+		function cadPessoa(){
+			//Pegando os dados do form
+			let nome = document.getElementById('nome').value;
+			let idade = document.getElementById('age').value;
+			let idade_num = Number(idade);
+			let classe = document.getElementById('option_class').value;
+
+			// Pegando os espaços onde mostrarão eles
+
+			let nome_ = document.getElementById('nome_');
+			let age_ = document.getElementById('age_');
+			let class_ = document.getElementById('class_');
+
+			nome_.innerHTML = nome;
+			age_.innerHTML = idade_num;
+			class_.innerHTML = classe;
+		}
+
+	</script>
+</body>
+</html>

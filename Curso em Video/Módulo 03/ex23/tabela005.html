@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercício de Tabelas</title>
+	<style type="text/css">
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		table{
+			border-collapse: collapse;
+			width: 500px;
+		}
+
+		caption{
+			font-size: 1.3em;
+			padding: 8px;
+			font-weight: bolder;
+		}
+
+		td, th{
+			border: 1px solid black;
+			padding: 8px;
+		}
+
+		.light_blue{
+			background-color: lightblue;
+			animation-name: trocaCor;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+
+		}
+
+		.light_pink{
+			background-color: lightpink;
+			animation-name: trocaCor2;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			
+		}
+
+		@keyframes trocaCor{
+			0%{
+				background-color: lightblue;
+			}
+			70%{
+				background-color: lightpink;
+			}
+		}
+
+		@keyframes trocaCor2{
+			0%{
+				background-color: lightpink;
+			}
+
+			70%{
+				background-color: lightblue;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Exercício de Tabelas</h1>
+
+	<table>
+
+		<colgroup>
+
+			<col class="light_blue">
+			<col class="light_pink" span="2">
+			<col class="light_blue">
+
+		</colgroup>
+
+		<caption>Cadastro</caption>
+
+		<tr>
+			<th scope="col">Nome</th>
+			<th scope="col">Sexo</th>
+			<th scope="col">Idade</th>
+			<th scope="col">Profissão</th>
+		</tr>
+
+		<tr>
+			<td>Ana Maria</td>
+			<td>F</td>
+			<td>25</td>
+			<td>Jornalista</td>
+		</tr>
+
+		<tr>
+			<td>Billy Bruto</td>
+			<td>M</td>
+			<td>32</td>
+			<td>Agente da CIA</td>
+		</tr>
+
+		<tr>
+			<td>Hugh Campbell</td>
+			<td>M</td>
+			<td>23</td>
+			<td>Atendente</td>
+		</tr>
+
+		<tr>
+			<td>Tempesta</td>
+			<td>F</td>
+			<td>147</td>
+			<td>Empresária</td>
+		</tr>
+
+		<tr>
+			<td>Soraya Agiota</td>
+			<td>F</td>
+			<td>48</td>
+			<td>Vereadora</td>
+		</tr>
+
+	</table>
+</body>
+</html>
